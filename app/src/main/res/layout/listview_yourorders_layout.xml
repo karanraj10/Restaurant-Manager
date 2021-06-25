@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/listview_yourorders_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="25dp"
+                android:paddingTop="18dp"
+                android:text="Restaurant : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourorders_date"
+                android:layout_below="@id/listview_yourorders_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="25dp"
+                android:paddingTop="18dp"
+                android:text="Date : 2019-04-20"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourorders_amount"
+                android:layout_below="@id/listview_yourorders_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:paddingStart="25dp"
+                android:paddingTop="18dp"
+                android:text="Amount : "
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+
+            <TextView
+                android:id="@+id/listview_yourorders_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview_yourorders_date"
+                android:layout_marginStart="25dp"
+                android:layout_marginBottom="18dp"
+                android:fontFamily="serif-monospace"
+                android:lineSpacingMultiplier="1"
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

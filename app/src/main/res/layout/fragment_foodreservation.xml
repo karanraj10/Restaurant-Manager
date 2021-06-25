@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="70dp">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:text="Foods"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="22sp"
+        android:id="@+id/foodreservationFoodLabel"
+        />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/foodreservationFoodLabel"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Reservation"
+        android:id="@+id/foodreservationReservationLabel"
+        />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@id/foodreservationReservationLabel"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/foodreservationViewPager"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+  <TextView
+      android:id="@+id/login_text1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="10dp"
+      android:layout_marginTop="70dp"
+      android:fontFamily="sans-serif-condensed-light"
+      android:padding="10dp"
+      android:text="@string/login"
+      android:textSize="50sp"
+      app:fontFamily="sans-serif-condensed-light" />
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/login_textlayout_1"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_text1"
+      android:layout_marginTop="70dp"
+      android:layout_marginStart="20dp"
+      app:errorEnabled="true"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorBlack"
+        android:inputType="textNoSuggestions"
+        android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+        app:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/username"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/login_textlayout_2"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_textlayout_1"
+      android:layout_marginStart="20dp"
+      app:errorEnabled="true"
+      app:passwordToggleEnabled="true"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/login_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorBlack"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@.#$%&amp;'*+-/=?^_`{|"
+        app:fontFamily="sans-serif-condensed-medium"
+        android:hint="@string/password"/>
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+  <Button
+      android:id="@+id/login_LoginBtn"
+      android:textColor="@color/colorWhite"
+      android:layout_width="300dp"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/login_textlayout_2"
+      android:layout_marginStart="20dp"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/button_shape"
+      android:text="@string/login"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:fontFamily="sans-serif-condensed-light" />
+
+  <TextView
+      android:id="@+id/login_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/need_help"
+      android:layout_below="@+id/login_LoginBtn"
+      android:layout_marginStart="86dp"
+      android:layout_marginTop="15dp"
+      />
+
+  <TextView
+      android:id="@+id/login_reset"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/reset_password"
+      android:textColor="@color/colorPrimaryDark"
+      android:layout_below="@+id/login_LoginBtn"
+      android:layout_toEndOf="@+id/login_text2"
+      android:layout_marginTop="15dp"
+      android:layout_marginStart="5dp"
+      />
+
+
+</RelativeLayout>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/admin_emp_refreshlayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="70dp">
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/admin_manage_employee_linearlayout"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500px"
+                    android:id="@+id/admin_manage_employee_relativelayout"
+                    android:visibility="invisible"
+                    android:background="@drawable/border_layout"
+                    android:layout_below="@id/admin_manage_employee_linearlayout">
+
+                    <ImageView
+                        android:id="@+id/admin_manage_employee_imgv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_add_user"
+                        android:layout_centerInParent="true"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/admin_manage_employee_imgv"
+                        android:textSize="25sp"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:layout_centerHorizontal="true"
+                        android:text="Add Employee"/>
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

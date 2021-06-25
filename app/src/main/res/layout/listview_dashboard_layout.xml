@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/listview_dashboard_layout"
+            android:background="@color/colorWhite">
+            <TextView
+                android:id="@+id/listview_dashboard_tno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table Number : "
+                android:layout_margin="25dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <Button
+                android:id="@+id/listview_dashboard_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="FINISH"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_shape"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+
+            <TextView
+                android:id="@+id/listview_dashboard_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:lines="6"
+                android:fontFamily="serif-monospace"
+                android:layout_marginStart="25dp"
+                android:lineSpacingMultiplier="1"
+                android:layout_below="@+id/listview_dashboard_tno"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+        </RelativeLayout>
+</RelativeLayout>

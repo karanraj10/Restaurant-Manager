@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/register_restaurant_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+
+        <TextView
+            android:id="@+id/reg_res_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Register Restaurant"
+            android:textSize="40sp"
+            app:fontFamily="sans-serif-condensed-light" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_res_textlayout_0"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_res_text1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_res_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="Username"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_res_textlayout_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_res_textlayout_0"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_res_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz@.!#$%&amp;'*+-/=?^_`{|"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_res_textlayout_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_res_textlayout_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_res_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.!#$%&amp;'*+-/=?^_`{|"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_res_textlayout_4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_res_textlayout_3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_res_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/mobile"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_res_textlayout_5"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_res_textlayout_4"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_res_gstin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="GSTIN"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_res_textlayout_6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_res_textlayout_5"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_res_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,-_./&amp;"
+                android:hint="@string/address"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Spinner
+                android:layout_below="@id/reg_res_textlayout_6"
+                android:id="@+id/reg_res_location"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="310dp"
+                android:layout_height="50dp"
+                android:hint="City"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+
+        <ImageView
+            android:id="@+id/reg_res_next"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/reg_res_location"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_next_page" />
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="70dp"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:fontFamily="sans-serif-condensed-light"
+       android:padding="10dp"
+       android:text="@string/items"
+       android:textSize="50sp" />
+
+
+    <ImageView
+        android:id="@+id/cart_card_empty_image"
+        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_shopping_cart"/>
+
+    <TextView
+        android:id="@+id/cart_card_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_below="@id/cart_card_empty_image"
+        android:text="Your Cart Is Empty"/>
+
+    <ListView
+        android:divider="@color/colorWhite"
+        android:id="@+id/cart_card_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:paddingBottom="100dp"/>
+
+    <RelativeLayout
+        android:id="@+id/cust_cart_order_relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/borderline_layout">
+
+        <TextView
+            android:id="@+id/cust_cart_itemtotal_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Items Total:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_itemtotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/cust_cart_itemtotal_label"
+            android:fontFamily="sans-serif-medium"
+            android:text="₹sdf"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_tax_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_cart_itemtotal_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Tax:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_tax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_cart_itemtotal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cust_cart_tax_label"
+            android:fontFamily="sans-serif-medium"
+            android:text="₹"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_discount_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_cart_tax_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Discount:"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_cart_tax"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/cust_cart_discount_label"
+            android:fontFamily="sans-serif-medium"
+            android:text="₹"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_total_label"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_cart_discount_label"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Grand Total:"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/cust_cart_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cust_cart_discount"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_toEndOf="@+id/cust_cart_total_label"
+            android:fontFamily="sans-serif-medium"
+            android:text="₹"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Place Order"
+            android:background="@drawable/button_shape"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:id="@+id/cust_cart_order_button"/>
+
+    </RelativeLayout>
+</RelativeLayout>

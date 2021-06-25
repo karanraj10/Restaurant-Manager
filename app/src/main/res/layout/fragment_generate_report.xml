@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    tools:context=".UI.Admin.OrderReservationModules.generate_report">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview_report"/>
+
+    <Button
+        android:id="@+id/webview_report_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="Get PDF"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/button_shape"
+            />
+
+
+
+</FrameLayout>

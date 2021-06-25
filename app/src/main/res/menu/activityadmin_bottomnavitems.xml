@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ManageOrders"
+        android:title="Checkout"
+        android:icon="@drawable/ic_order"
+        />
+
+    <item
+        android:id="@+id/AdminTools"
+        android:title="Tools"
+        android:icon="@drawable/ic_tools"
+        />
+
+    <item
+        android:id="@+id/ManagerReservation"
+        android:title="History"
+        android:icon="@drawable/ic_clock"
+        />
+
+
+    <item
+        android:id="@+id/ManageAccount"
+        android:title="Account"
+        android:icon="@drawable/ic_account"
+        />
+
+</menu>

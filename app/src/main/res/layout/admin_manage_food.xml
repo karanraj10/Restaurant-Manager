@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="70dp"
+    android:background="@color/colorWhite"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/admin_food_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="5dp"
+            android:text="Food Items"
+            android:textSize="25sp" />
+
+        <ListView
+            android:divider="@color/colorWhite"
+            android:dividerHeight="20px"
+            android:layout_below="@+id/admin_food_item_text"
+            android:id="@+id/admin_food_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+
+
+
+
+
+</RelativeLayout>
+

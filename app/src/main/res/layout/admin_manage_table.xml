@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/admin_manage_table_refreshlayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="70dp">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/admin_manage_table_linearlayout"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300px"
+                android:padding="10px"
+                android:id="@+id/admin_manage_table_relativelayout"
+                android:background="@drawable/border_layout"
+                android:layout_below="@id/admin_manage_table_linearlayout">
+
+                <ImageView
+                    android:id="@+id/admin_manage_table_imgv"
+                    android:layout_marginTop="70px"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_plus" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/admin_manage_table_imgv"
+                    android:layout_marginTop="10px"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_centerHorizontal="true"
+                    android:text="Add Table"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

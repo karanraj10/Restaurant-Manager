@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    app:layout_goneMarginBottom="70dp"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/admin_tools_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="5dp"
+        android:text="Admin Tools"
+        android:textSize="25sp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorWhite" >
+        <ImageView
+            android:id="@+id/online_order_image_view"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_order" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Online Orders"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/online_order_image_view"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorWhite" >
+        <ImageView
+            android:id="@+id/online_order_image_view1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_woman" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employees"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/online_order_image_view1"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorWhite">
+        <ImageView
+            android:id="@+id/online_order_image_view2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_restaurant"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tables"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/online_order_image_view2"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorWhite">
+        <ImageView
+            android:id="@+id/online_order_image_view3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_fast_food"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@id/online_order_image_view3"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

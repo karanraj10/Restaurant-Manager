@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="175dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/listview_yourreservation_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date : 2019-04-20"
+                android:paddingStart="25dp"
+                android:paddingTop="18dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourreservation_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Amount : "
+                android:paddingStart="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:paddingTop="18dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+
+            <TextView
+                android:id="@+id/listview_yourreservation_starttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Time : "
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:fontFamily="serif-monospace"
+                android:layout_marginStart="25dp"
+                android:layout_below="@+id/listview_yourreservation_date"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourreservation_endtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="End Time : "
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:fontFamily="serif-monospace"
+                android:layout_marginStart="25dp"
+                android:layout_below="@+id/listview_yourreservation_date"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourreservation_tno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tno : "
+                android:textStyle="bold"
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:fontFamily="serif-monospace"
+                android:layout_marginStart="25dp"
+                android:layout_below="@+id/listview_yourreservation_endtime"
+                android:textSize="15sp"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourreservation_guests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview_yourreservation_endtime"
+                android:layout_alignParentRight="true"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:text="Guest : "
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+            <TextView
+                android:id="@+id/listview_yourreservation_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listview_yourreservation_tno"
+                android:layout_marginStart="25dp"
+                android:fontFamily="serif-monospace"
+                android:paddingTop="20dp"
+                android:paddingEnd="30dp"
+                android:text="Restaurant : "
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                app:fontFamily="sans-serif-condensed-medium" />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

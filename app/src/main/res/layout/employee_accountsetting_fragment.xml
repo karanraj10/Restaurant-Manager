@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorWhite">
+
+
+    <TextView
+        android:id="@+id/emp_acc_manage_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="10dp"
+        android:text="@string/manage_account"
+        android:textSize="50sp"
+        app:fontFamily="sans-serif-condensed-light"
+        android:layout_marginBottom="50dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emp_acc_manage_layout1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_acc_manage_name_text"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emp_acc_manage_name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/colorBlack"
+            app:fontFamily="sans-serif-condensed-medium"
+            android:hint="Name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/emp_acc_manage_layout2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_acc_manage_layout1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emp_acc_manage_mobile_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            android:digits="0123456789"
+            app:fontFamily="sans-serif-condensed-medium"
+            android:hint="@string/mobile"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/emp_acc_manage_update_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emp_acc_manage_layout2"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_shape"
+        android:text="Update"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        app:fontFamily="sans-serif-condensed-light" />
+
+</RelativeLayout>

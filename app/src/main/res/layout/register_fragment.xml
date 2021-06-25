@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+<RelativeLayout
+    android:id="@+id/register_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/signup_progress_circular"
+        android:visibility="gone"/>
+
+    <TextView
+            android:id="@+id/reg_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="@string/register"
+            android:textSize="50sp"
+            app:fontFamily="sans-serif-condensed-light" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_textlayout_0"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_text1"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_username"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="Username"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_textlayout_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_textlayout_0"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="Name"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_textlayout_2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_textlayout_1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz@.!#$%&amp;'*+-/=?^_`{|"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/email"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_textlayout_3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_textlayout_2"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            app:passwordToggleEnabled="true"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_password"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@.!#$%&amp;'*+-/=?^_`{|"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/password"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_textlayout_4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_textlayout_3"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/mobile"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/reg_textlayout_5"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/reg_textlayout_4"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reg_address"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/colorBlack"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,-_./&amp;"
+                android:lines="3"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="@string/address"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/reg_RegisterBtn"
+            android:layout_width="300dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reg_textlayout_5"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/sign_up"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed-light" />
+
+</RelativeLayout>
+</ScrollView>

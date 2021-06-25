@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/admin_add_table_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/admin_add_table_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:padding="10dp"
+            android:text="Add Table"
+            android:textSize="50sp"
+            app:fontFamily="sans-serif-condensed-light" />
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/admin_add_table_textlayout_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admin_add_table_text1"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/admin_add_table_capacity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:textColor="@color/colorBlack"
+                app:fontFamily="sans-serif-condensed-medium"
+                android:hint="Capacity"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/admin_add_table_RegisterBtn"
+            android:layout_width="300dp"
+            android:textColor="@color/colorWhite"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/admin_add_table_textlayout_1"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:text="Add"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:fontFamily="sans-serif-condensed-light" />
+
+    </RelativeLayout>
+</ScrollView>

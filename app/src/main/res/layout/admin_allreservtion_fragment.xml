@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="70dp"
+    android:background="@color/colorWhite">
+
+    <TextView
+        android:id="@+id/admin_reservation_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="5dp"
+        android:text="Reservation"
+        android:textSize="25sp" />
+
+    <androidx.appcompat.widget.SearchView
+        android:layout_marginStart="10dp"
+        android:id="@+id/admin_reservation_search"
+        android:layout_below="@id/admin_reservation_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/admin_reservation_filter">
+    </androidx.appcompat.widget.SearchView>
+
+    <ImageButton
+        android:id="@+id/admin_reservation_filter"
+        android:layout_below="@id/admin_reservation_text1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="13dp"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorWhite"
+        android:src="@drawable/ic_adjust" />
+
+        <ListView
+            android:dividerHeight="20px"
+            android:divider="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/admin_reservation_search"
+            android:id="@+id/admin_reservation_linearlayout"/>
+
+
+</RelativeLayout>

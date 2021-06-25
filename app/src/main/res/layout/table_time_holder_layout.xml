@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ToggleButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="45dp"
+    android:layout_marginRight="10dp"
+    android:id="@+id/cust_reservation_timebutton"
+    android:background="@drawable/togglebutton_layout"
+    android:fontFamily="sans-serif-light"
+    android:textSize="19sp"
+    android:textColor="@android:color/black"
+    />

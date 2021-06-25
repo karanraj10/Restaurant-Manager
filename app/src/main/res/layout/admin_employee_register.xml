@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/admin_emp_register_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite">
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:id="@+id/admin_emp_signup_progress_circular"
+                android:visibility="gone"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_0"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:digits="abcdefghijklmnopqrstuvwxyz_ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+                    android:textColor="@color/colorBlack"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="Username"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_emp_reg_textlayout_0"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:textColor="@color/colorBlack"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="Name"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_emp_reg_textlayout_1"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyz@.!#$%&amp;'*+-/=?^_`{|"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/email"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_emp_reg_textlayout_2"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/mobile"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_5"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/admin_emp_reg_textlayout_4"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPostalAddress"
+                    android:textColor="@color/colorBlack"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,-_./&amp;"
+                    android:lines="3"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="@string/address"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_6"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_emp_reg_textlayout_5"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_salary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textColor="@color/colorBlack"
+                    android:digits="0123456789"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="Salary"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/admin_emp_reg_textlayout_7"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_emp_reg_textlayout_6"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:focusable="false"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/admin_emp_reg_bdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/colorBlack"
+                    android:digits="0123456789"
+                    android:focusable="false"
+                    app:fontFamily="sans-serif-condensed-medium"
+                    android:hint="BirthDate"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/admin_emp_reg_RegisterBtn"
+                android:layout_width="300dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/admin_emp_reg_textlayout_7"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_shape"
+                android:text="@string/sign_up"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:fontFamily="sans-serif-condensed-light" />
+
+        </RelativeLayout>
+</ScrollView>

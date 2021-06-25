@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/cust_acc_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="10dp"
+        android:text="Karan"
+        android:textSize="50sp"
+        app:fontFamily="sans-serif-condensed-light"
+        android:layout_marginBottom="50dp"/>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp"
+        app:fontFamily="sans-serif-condensed-light"
+        android:fontFamily="sans-serif-condensed-light"
+        android:id="@+id/cust_acc_list"
+        android:layout_below="@+id/cust_acc_name_text"/>
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UI.Base.register_restaurant_fragment2">
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/signup_progress_circular"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/reg_res_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="10dp"
+        android:text="Register Restaurant"
+        android:textSize="40sp"
+        app:fontFamily="sans-serif-condensed-light" />
+
+    <ImageButton
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon"
+        android:layout_marginStart="20dp"
+        android:id="@+id/reg_res_image"
+        android:layout_below="@id/reg_res_text2"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_res_textlayout_1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_res_image"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reg_res_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/colorBlack"
+            app:fontFamily="sans-serif-condensed-medium"
+            android:hint="Name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reg_res_textlayout_7"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_res_textlayout_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <CheckBox
+            android:id="@+id/reg_res_allowres"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allow Reservation"
+            android:layout_below="@id/reg_res_location"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:visibility="invisible"
+        android:id="@+id/reg_res_textlayout_8"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_res_textlayout_7"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@id/reg_res_textlayout_7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:focusable="false"
+            android:id="@+id/reg_res_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/colorBlack"
+            app:fontFamily="sans-serif-condensed-medium"
+            android:hint="Start"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/reg_res_tolabel"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        android:textSize="15sp"
+        android:layout_below="@id/reg_res_textlayout_7"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TO"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:visibility="invisible"
+        android:id="@+id/reg_res_textlayout_9"
+        android:layout_width="100dp"
+        android:layout_alignEnd="@id/reg_res_textlayout_7"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_res_textlayout_7"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:focusable="false"
+            android:id="@+id/reg_res_endtime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:textColor="@color/colorBlack"
+            app:fontFamily="sans-serif-condensed-medium"
+            android:hint="End"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/reg_res_RegisterBtn"
+        android:layout_width="300dp"
+        android:textColor="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reg_res_textlayout_9"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:text="@string/sign_up"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:fontFamily="sans-serif-condensed-light" />
+
+
+
+
+</RelativeLayout>

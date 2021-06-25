@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "968938171430",
+    "firebase_url": "https://temporal-falcon-262212.firebaseio.com",
+    "project_id": "temporal-falcon-262212",
+    "storage_bucket": "temporal-falcon-262212.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968938171430:android:07a3205e01842745e9cae7",
+        "android_client_info": {
+          "package_name": "com.project.restaurantmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968938171430-tdpu9r1bcc5e4epdq43venlhrv1f2ok7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.restaurantmanager",
+            "certificate_hash": "7260a8c1a6f677797fb160f20cbf1865436fba02"
+          }
+        },
+        {
+          "client_id": "968938171430-9b615o6efdi5dbt3vbd9m0r14nv1pse0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0lXxJkFeIix7lBK174m3tqoUbx7LtzQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968938171430-9b615o6efdi5dbt3vbd9m0r14nv1pse0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

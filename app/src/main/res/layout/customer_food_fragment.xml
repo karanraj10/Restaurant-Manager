@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="70dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/coordinatorLayout"
+    android:background="@color/colorWhite">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/cust_listview_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/cust_listview_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            app:fontFamily="sans-serif-condensed-medium"
+            android:hint="Search"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ListView
+        android:layout_marginTop="60dp"
+        android:divider="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cust_recyclerview_food_fragment"
+        android:padding="10dp"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

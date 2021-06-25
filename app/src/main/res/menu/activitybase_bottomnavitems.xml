@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Delivery"
+        android:title="@string/delivery"
+        android:icon="@drawable/ic_fast_food"
+        />
+
+    <item
+        android:id="@+id/Cart"
+        android:title="@string/cart"
+        android:icon="@drawable/ic_shopping_cart"
+        />
+
+    <item
+        android:id="@+id/Account"
+        android:title="@string/account"
+        android:icon="@drawable/ic_account"
+        />
+</menu>
