@@ -1,8 +1,6 @@
-# Restaurant Manager (An Andorid Application)
+# Restaurant Manager (Andorid Application)
 
-Last year project which was never analyzed due to corona :F
-
-##### Team :  alltimenoob,Dev-karanraj
+##### Team :  alltimenoob (Mihir Chauhan), karanraj10 (Karan Raj)
 
 ## What does app do?
 
@@ -10,25 +8,12 @@ Last year project which was never analyzed due to corona :F
 - Customer can register and signin select restaurant and order food online.
 - Employee can signin and take offline orders and manage order's list of customer(offline).
 
-## Content
+## Modules
 
-- Restaurant Module
-- Customer Module
-- Employee Module
+* Restaurant Module
+* Customer Module
+* Employee Module
 
-## Technologies
+## Technology
 
-- Java
-- PHP
-- Node.js
-- HTML,CSS
-
-## Tools
-
-- Android Studio
-- Notepad++
-- VS Code
-- GCS (VM 700MB RAM,10GB STORAGE,1v CPU)
-
-
-
+* Android, PHP, MySQL, Firebase
